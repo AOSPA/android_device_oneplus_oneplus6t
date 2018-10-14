@@ -238,10 +238,8 @@
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
         <item>2.0482</item>
-        <item>2.543</item>
-        <item>3.0253</item>
-        <item>3.5077</item>
-        <item>4.0824</item>
+        <item>2.7841</item>
+        <item>3.79505</item>
         <item>4.4748</item>
         <item>5.08</item>
         <item>6.4233</item>
