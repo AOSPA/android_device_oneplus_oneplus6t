@@ -23,12 +23,20 @@ $(call inherit-product-if-exists, vendor/oneplus/oneplus6t/oneplus6t-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/pa/config/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml
+
 # Properties
 -include $(LOCAL_PATH)/device-props.mk
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    pa.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita
 
 # Inherit from sdm845-common
 $(call inherit-product, device/oneplus/sdm845-common/sdm845.mk)
