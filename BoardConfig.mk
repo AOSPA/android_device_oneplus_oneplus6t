@@ -19,8 +19,5 @@
 
 DEVICE_PATH := device/oneplus/oneplus6t
 
-# HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
-
 # inherit from the proprietary version
 -include vendor/oneplus/oneplus6t/BoardConfigVendor.mk
